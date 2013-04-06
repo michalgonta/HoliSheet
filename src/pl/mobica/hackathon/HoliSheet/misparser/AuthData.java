@@ -12,6 +12,16 @@ public class AuthData {
     private final String userdomain;
     private final String phpsesid;
 
+    public String getUserDomain() {
+        return userdomain;
+    }
+
+    public String getPhpsesid() {
+        return phpsesid;
+    }
+
+    private String userLogin;
+
     private AuthData(String userlogin, String userdomain, String phpsesid) {
         this.userlogin = userlogin;
         this.userdomain = userdomain;
@@ -20,5 +30,9 @@ public class AuthData {
 
     public static AuthData create(String userlogin, String userdomain, String phpsesid) {
         return new AuthData(userlogin, userdomain, phpsesid);
+    }
+
+    public String getUserLogin() {
+        return userLogin;
     }
 }
