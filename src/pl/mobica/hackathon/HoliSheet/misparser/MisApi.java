@@ -1,5 +1,9 @@
 package pl.mobica.hackathon.HoliSheet.misparser;
 
+import pl.mobica.hackathon.HoliSheet.misparser.exceptions.FillException;
+import pl.mobica.hackathon.HoliSheet.misparser.exceptions.MisException;
+import pl.mobica.hackathon.HoliSheet.misparser.exceptions.MisIOException;
+
 import java.util.Date;
 
 
@@ -13,7 +17,7 @@ import java.util.Date;
  */
 public interface MisApi {
 
-    AuthData login (String user, String pass) throws LoginException;
+    AuthData login (String user, String pass) throws MisException;
 
-    void fillHoliday(AuthData authentication, Date date);
+    void fillHoliday(AuthData authentication, Date date) throws MisException;
 }

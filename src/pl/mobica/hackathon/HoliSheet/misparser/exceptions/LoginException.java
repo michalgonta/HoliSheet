@@ -8,4 +8,7 @@ package pl.mobica.hackathon.HoliSheet.misparser.exceptions;
  * To change this template use File | Settings | File Templates.
  */
 public class LoginException extends MisException {
+    public LoginException(String s) {
+        super(s);
+    }
 }
