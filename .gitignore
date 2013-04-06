@@ -1,5 +1,6 @@
 .idea
 bin
 gen/*
-*/*Test.java
+src/pl/mobica/hackathon/HoliSheet/tests/
+src/pl/mobica/hackathon/HoliSheet/tests
 
